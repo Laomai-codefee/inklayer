@@ -5,6 +5,6 @@ rich markup, review, and editing workflows on the web.
 
 - Website: https://inklayer.dev
 - Core engine: PDF.js + pdf-lib
-- Focus: annotation, export, print, and embedding
+- Focus: viewer, annotation, export, print, and embedding
 
 > This repository serves as the main entry point for the InkLayer project.
