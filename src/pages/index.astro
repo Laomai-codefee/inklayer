@@ -1,0 +1,122 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro'
+---
+
+<BaseLayout title="InkLayer — PDF Annotation SDK">
+    <!-- HERO -->
+    <section class="relative overflow-hidden">
+        <div class="absolute -inset-20 -z-10 bg-[#6e56cf]/20 blur-3xl"></div>
+
+        <div class="max-w-7xl mx-auto px-6 py-32">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+                <div>
+                    <h1 class="text-5xl md:text-6xl font-semibold tracking-tight text-white">
+                        PDF annotation infrastructure<br />
+                        for production systems
+                    </h1>
+
+                    <p class="mt-6 max-w-xl text-lg text-slate-300">
+                        InkLayer is a developer-first SDK for building reliable PDF review, markup, and annotation workflows with long-term
+                        maintainability and standards compliance.
+                    </p>
+
+                    <div class="mt-10 flex gap-4">
+                        <a
+                            href="https://github.com/Laomai-codefee/inklayer"
+                            class="inline-flex items-center rounded-lg bg-brand-600 px-6 py-3 font-medium text-white hover:bg-brand-500 transition"
+                        >
+                            View on GitHub
+                        </a>
+
+                        <a
+                            href="#why"
+                            class="inline-flex items-center rounded-lg border border-slate-700 px-6 py-3 font-medium text-slate-200 hover:bg-slate-900 transition"
+                        >
+                            Learn More
+                        </a>
+                    </div>
+                </div>
+
+                <div class="relative">
+                    <div class="rounded-2xl p-4">
+                        <img src="/images/inklayer-flow.png" alt="InkLayer annotation flow" class="w-full max-w-[600px] select-none" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- WHY -->
+    <section id="why" class="max-w-7xl mx-auto px-6 py-32 relative">
+        <div class="max-w-3xl">
+            <h2 class="text-3xl font-semibold tracking-tight text-white">Why InkLayer</h2>
+
+            <p class="mt-6 text-slate-300">
+                PDF annotation looks simple until it reaches production. Coordinate transforms, rendering consistency, printing correctness, export
+                reliability, and PDF specification compliance introduce hidden complexity.
+            </p>
+
+            <p class="mt-4 text-slate-300">
+                InkLayer addresses these challenges at the infrastructure level, allowing teams to build document workflows without re-implementing
+                fragile annotation logic.
+            </p>
+        </div>
+
+        <div class="relative mt-16 lg:mt-12">
+            <div class="rounded-2xl bg-slate-900/40 p-4 shadow-xl ring-1 ring-white/10 mx-auto max-w-[900px]">
+                <img src="/images/inklayer-screenshot.png" alt="InkLayer real PDF annotation screenshot" class="w-full select-none" />
+            </div>
+        </div>
+    </section>
+
+    <!-- CAPABILITIES -->
+    <section id="capabilities" class="bg-slate-900/50">
+        <div class="max-w-7xl mx-auto px-6 py-32">
+            <h2 class="text-3xl font-semibold tracking-tight text-white">Core Capabilities</h2>
+
+            <div class="mt-12 grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+                <!-- Rich annotation model -->
+                <div class="rounded-xl border border-slate-800 bg-slate-950 p-6">
+                    <h3 class="font-medium text-white">Rich annotation model</h3>
+                    <p class="mt-2 text-sm text-slate-400">
+                        Highlights, ink, text, stamps, clouds, shapes, and extensible annotation types with precise geometry.
+                    </p>
+                </div>
+
+                <!-- Standards-compliant export -->
+                <div class="rounded-xl border border-slate-800 bg-slate-950 p-6">
+                    <h3 class="font-medium text-white">Standards-compliant export</h3>
+                    <p class="mt-2 text-sm text-slate-400">Built on PDF.js and pdf-lib to ensure compatibility across mainstream PDF viewers.</p>
+                </div>
+
+                <!-- Embedding-first design -->
+                <div class="rounded-xl border border-slate-800 bg-slate-950 p-6">
+                    <h3 class="font-medium text-white">Embedding-first design</h3>
+                    <p class="mt-2 text-sm text-slate-400">Designed to integrate into complex enterprise systems, not standalone demos.</p>
+                </div>
+
+                <!-- Framework-friendly bindings -->
+                <div class="rounded-xl border border-slate-800 bg-slate-950 p-6">
+                    <h3 class="font-medium text-white">Framework-friendly bindings</h3>
+                    <p class="mt-2 text-sm text-slate-400">
+                        Provides a framework-agnostic core API, with optimized experience for React and native PDF.js integration.
+                    </p>
+                </div>
+
+                <!-- Print & export ready (coming soon) -->
+                <div class="rounded-xl border border-slate-800 bg-slate-950 p-6">
+                    <h3 class="font-medium text-white">Print & export ready</h3>
+                    <p class="mt-2 text-sm text-slate-400">Designed for consistent export and printing workflows (coming soon).</p>
+                </div>
+
+                <!-- Scalable & collaborative (roadmap) -->
+                <div class="rounded-xl border border-slate-800 bg-slate-950 p-6">
+                    <h3 class="font-medium text-white">Scalable & collaborative</h3>
+                    <p class="mt-2 text-sm text-slate-400">
+                        Optimized for large documents, dense annotations, and collaborative workflows (roadmap feature).
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+</BaseLayout>
