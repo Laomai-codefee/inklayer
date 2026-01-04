@@ -10,15 +10,18 @@ import BaseLayout from '../layouts/BaseLayout.astro'
         <div class="max-w-7xl mx-auto px-6 py-32">
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
                 <div>
-                    <h1 class="text-5xl md:text-6xl font-semibold tracking-tight text-white">
-                        PDF annotation infrastructure<br />
-                        for production systems
+                    <h1 class="text-4xl md:text-5xl font-semibold tracking-tight text-white">
+                        <span class="whitespace-nowrap"> PDF Annotation Infrastructure </span>
+                        <br />
+                        <span class="whitespace-nowrap">for Production Systems</span>
                     </h1>
 
                     <p class="mt-6 max-w-xl text-lg text-slate-300">
-                        InkLayer is a developer-first SDK for building reliable PDF review, markup, and annotation workflows with long-term
-                        maintainability and standards compliance.
+                        InkLayer provides a stable annotation layer on top of PDF.js, handling annotation models, coordinate transforms, and export
+                        pipelines — so teams can build PDF workflows without maintaining fragile, custom logic.
                     </p>
+
+                    <p class="mt-6 max-w-xl text-lg text-slate-300">Not a viewer. Not a demo. Infrastructure.</p>
 
                     <div class="mt-10 flex gap-4">
                         <a
@@ -49,10 +52,10 @@ import BaseLayout from '../layouts/BaseLayout.astro'
     <!-- WHY -->
     <section id="why" class="max-w-7xl mx-auto px-6 py-32 relative">
         <div class="max-w-3xl">
-            <h2 class="text-3xl font-semibold tracking-tight text-white">Why InkLayer</h2>
+            <h2 class="text-4xl font-semibold tracking-tight text-white">Why InkLayer</h2>
 
             <p class="mt-6 text-slate-300">
-                PDF annotation looks simple until it reaches production. Coordinate transforms, rendering consistency, printing correctness, export
+                PDF annotation looks simple — until it reaches production. Coordinate transforms, rendering consistency, printing correctness, export
                 reliability, and PDF specification compliance introduce hidden complexity.
             </p>
 
@@ -63,8 +66,8 @@ import BaseLayout from '../layouts/BaseLayout.astro'
         </div>
 
         <div class="relative mt-16 lg:mt-12">
-            <div class="rounded-2xl bg-slate-900/40 p-4 shadow-xl ring-1 ring-white/10 mx-auto max-w-[900px]">
-                <img src="/images/inklayer-screenshot.png" alt="InkLayer real PDF annotation screenshot" class="w-full select-none" />
+            <div class="rounded-2xl bg-slate-900/40 p-3 shadow-xl ring-1 ring-white/10 mx-auto max-w-[900px]">
+                <img src="/images/inklayer-screenshot.png" alt="InkLayer real PDF annotation screenshot" class="w-full select-none rounded-lg" />
             </div>
         </div>
     </section>
@@ -72,7 +75,7 @@ import BaseLayout from '../layouts/BaseLayout.astro'
     <!-- CAPABILITIES -->
     <section id="capabilities" class="bg-slate-900/50">
         <div class="max-w-7xl mx-auto px-6 py-32">
-            <h2 class="text-3xl font-semibold tracking-tight text-white">Core Capabilities</h2>
+            <h2 class="text-4xl font-semibold tracking-tight text-white">Core Capabilities</h2>
 
             <div class="mt-12 grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
                 <!-- Rich annotation model -->
@@ -105,16 +108,14 @@ import BaseLayout from '../layouts/BaseLayout.astro'
 
                 <!-- Print & export ready (coming soon) -->
                 <div class="rounded-xl border border-slate-800 bg-slate-950 p-6">
-                    <h3 class="font-medium text-white">Print & export ready</h3>
-                    <p class="mt-2 text-sm text-slate-400">Designed for consistent export and printing workflows (coming soon).</p>
+                    <h3 class="font-medium text-white">Export & printing pipeline</h3>
+                    <p class="mt-2 text-sm text-slate-400">Designed for consistent export and printing workflows.</p>
                 </div>
 
                 <!-- Scalable & collaborative (roadmap) -->
                 <div class="rounded-xl border border-slate-800 bg-slate-950 p-6">
-                    <h3 class="font-medium text-white">Scalable & collaborative</h3>
-                    <p class="mt-2 text-sm text-slate-400">
-                        Optimized for large documents, dense annotations, and collaborative workflows (roadmap feature).
-                    </p>
+                    <h3 class="font-medium text-white">Collaboration-ready architecture</h3>
+                    <p class="mt-2 text-sm text-slate-400">Data models designed to support collaborative workflows.</p>
                 </div>
             </div>
         </div>
